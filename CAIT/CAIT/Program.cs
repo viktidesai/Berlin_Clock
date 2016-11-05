@@ -152,8 +152,8 @@ namespace CAIT
         {
             //set variables according to time slots 
             int minutesLine1, minutesLine2;
-            minutesLine1 = minutesToInt / 5;
-            minutesLine2 = minutesToInt % 5;
+            minutesLine1 = minutesToInt / minuteLimit;
+            minutesLine2 = minutesToInt % minuteLimit;
 
             for (int i = 1; i <= minutesLine1; i++)
             {
