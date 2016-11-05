@@ -150,9 +150,10 @@ namespace CAIT
         //print the minutes light pattern
         public void printMinutes(string minutes, int minuteLimit, int slots1, int slots2)
         {
+            //set variables according to time slots 
             int minutesLine1, minutesLine2;
-            minutesLine1 = minutesToInt / 5;
-            minutesLine2 = minutesToInt % 5;
+            minutesLine1 = minutesToInt / slots1;
+            minutesLine2 = minutesToInt % slots1;
 
             for (int i = 1; i <= minutesLine1; i++)
             {
@@ -274,7 +275,7 @@ namespace CAIT
 
              while (opt == 1);
 
-           // c.unitTest();
+             // c.unitTest();
 
 
 
